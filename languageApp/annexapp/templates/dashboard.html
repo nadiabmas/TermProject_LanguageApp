@@ -1,10 +1,22 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Dashboard</title>
 </head>
 <body>
-
+<h1>Welcome to your Dashboard!</h1>
+<br>
+<p>Pick one of the following options.</p>
+<div style="display: inline-block;">
+<img src="{% static 'images/spanish_image.jpeg' %}" alt="Spanish_image" width="351" height="248">
+</div>
+<div style="display: inline-block;">
+    <button onclick="window.location.href='{% url 'lessons' %}'">Lessons</button>
+    <button onclick="window.location.href='{% url 'quizzes' %}'">Quizzes</button>
+    <button onclick="window.location.href='{% url 'progress' %}'">Progress</button>
+</div>
 </body>
 </html>
