@@ -8,13 +8,17 @@
 <h1>ANNEX</h1>
 <h3>Welcome to Annex! A language learning website.</h3>
 <br>
-<p>Pick a language you'd like to practice.</p>
-<ul>
-    <li><a href="{% url 'dashboard' %}">Spanish</a></li>
-    <li><a href="{% url 'error_language' %}">French</a></li>
-    <li><a href="{% url 'error_language' %}">German</a></li>
-    <li><a href="{% url 'error_language' %}">Russian</a></li>
-    <li><a href="{% url 'error_language' %}">Mandarin</a></li>
-</ul>
+<p>Please sign in to access all the language-learning tools.</p>
+<br>
+{% extends 'base.html' %}
+
+{% block content %}
+ <h2>Sign In</h2>
+ <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign In</button>
+ </form>
+{% endblock %}
 </body>
 </html>
