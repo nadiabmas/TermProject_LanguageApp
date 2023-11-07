@@ -1,0 +1,14 @@
+ITEC4012 - Term Project P2: Backend
+
+Instructions:
+
+1. Type in the following username: nadiabm and password: ITEC4012_pass
+2. Click the sign in button
+3. Pick a language to practice. Click on one of the 5 hyperlinks. Only one of them has all the functions, the rest are just placeholders (hint: hola).
+4. Click on the "Lessons" button. There should appear 2 lessons, one about Hispanic foods and another one about Spain's history.
+5. Once you're done reading the lessons, go back to the dashboard, using the back arrow from your browser and click "Quizzes".
+6. On the quizzes section, pick a lesson you want to quiz yourseelf on. Click on whichever hyperlink you want to do.
+7. Answer the questions and click the submit button.
+8. After you're done quizzing yourself on you Spanish knowledge, go back to the dashboard, using the back arrow from your browser and click "Progress".
+9. In "Progress" you can see the number of quizzes you have completed, your score for each quiz and your total points.
+10. That's it :).
