@@ -1,6 +1,5 @@
-from django.shortcuts import render, redirect
-from .models import UserProfile
-from .forms import SignInForm
+from django.shortcuts import redirect, render
+from .forms import *
 
 
 def index(request):
@@ -31,6 +30,18 @@ def lessons(request):
 
 def quizzes(request):
     return render(request, 'quizzes.html')
+
+
+def quiz_1(request):
+    return render(request, 'quiz_1.html')
+
+
+def quiz_2(request):
+    return render(request, 'quiz_2.html')
+
+
+def quiz_3(request):
+    return render(request, 'quiz_3.html')
 
 
 def progress(request):
