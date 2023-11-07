@@ -2,6 +2,7 @@ from django.shortcuts import redirect, render
 from .forms import *
 
 
+# Sign in form
 def index(request):
     if request.method == 'POST':
         form = SignInForm(data=request.POST)
@@ -12,6 +13,7 @@ def index(request):
     return render(request, 'index.html', {'form': form})
 
 
+# Render html files
 def pick_language(request):
     return render(request, 'pick_language.html')
 

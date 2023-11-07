@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 
+# Url direction of every html file in my app
 urlpatterns = [
     path('', views.index, name='index'),
     path('dashboard/', views.dashboard, name='dashboard'),
